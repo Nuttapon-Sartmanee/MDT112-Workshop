@@ -57,7 +57,7 @@ namespace _2_DNA_Replication
 
         static void RestartOrEnd()
         {
-            Console.WriteLine("Do you want to process another sequence ? (Y / N) : ");
+            Console.Write("Do you want to process another sequence ? (Y / N) : ");
 
             bool Loop = true;
 
