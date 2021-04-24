@@ -30,7 +30,7 @@ namespace TEST
                             if (fLenght > 0)
                             {
                                 LoopfLenght = false;
-                                fov = (float)(2 * Math.Atan2(filmBackWidth/2,fLenght));
+                                fov = (float)(2 * Math.Atan(filmBackWidth / 2 * fLenght));
                                 Console.WriteLine("fLenght = {0} , fov = {1}", fLenght, fov);
                                 Console.ReadKey();
                             }
@@ -40,7 +40,7 @@ namespace TEST
                             }
                         }
 
-                        
+
                     }
                     else if (mode == "fov")
                     {
@@ -55,7 +55,7 @@ namespace TEST
                                 Console.WriteLine("fLenght = {0} , fov = {1}", fLenght, fov);
                                 Console.ReadKey();
                             }
-                            else 
+                            else
                             {
                                 Console.WriteLine("Invalid fov. Please input again.");
                             }
@@ -68,9 +68,8 @@ namespace TEST
                     Console.WriteLine("Invalid filmBackWidth. Please input again.");
                 }
             }
-            
+
         }
 
     }
 }
-
